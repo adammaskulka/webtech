@@ -1,0 +1,244 @@
+#zapalka{
+	z-index:100000000;
+	
+}
+
+.r90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+	left:50px;
+}
+
+
+.bloky2{
+	position: relative; 
+	vertical-align: top; 
+	display: inline-block;
+	width: 90px; 
+	padding: 10px; 
+	line-height: 200px; 
+	font-size: 3em; 
+	height: 200px; 
+	background-color: #dadada; 
+	text-align: center; 
+	font-weight: bold;
+	
+}
+.bloky1{
+	position: relative; 
+	vertical-align: top; 
+	display: inline-block; 
+	width: 90px; 
+	padding: 10px; 
+	height: 200px; 
+	background-color: #dadada;
+	
+}
+
+
+
+#b7,#b14,#b21{
+		position: absolute; 
+		top: 76%; 
+		left: 0px; 
+		height: 45%; 
+		width: 5px; 
+		margin: 0px 0px; 
+		background-color: silver;  
+		-webkit-transform: rotate(90deg);    
+		-moz-transform: rotate(90deg);    
+		-o-transform: rotate(90deg);    
+		-ms-transform: rotate(90deg);
+		transform: rotate(90deg);	
+		left:42px;
+	
+}
+
+#b6,#b13,#b20{
+	
+	position: absolute; 
+	top: 27%; 
+	left: 0px; 
+	height: 45%; 
+	width: 5px; 
+	margin: 0px 0px; 
+	background-color: silver; 
+	-webkit-transform: rotate(90deg);    
+	-moz-transform: rotate(90deg);    
+	-o-transform: rotate(90deg);    
+	-ms-transform: rotate(90deg);
+    transform: rotate(90deg);	
+	left:42px;
+}
+
+#b5,#b12,#b19{
+	position: absolute; 
+	top: -21.5%;
+	height: 45%; 
+	width: 5px; 
+	margin: 0px 0px; 
+	background-color: silver; 
+	-webkit-transform: rotate(90deg);    
+	-moz-transform: rotate(90deg);    
+	-o-transform: rotate(90deg);    
+	-ms-transform: rotate(90deg);
+    transform: rotate(90deg);	
+	left:42px;		
+}
+
+#b22 {
+	position: relative; 
+	vertical-align: top; 
+	display: inline-block; 
+	width: 90px; 
+	padding: 10px; 
+	line-height: 200px; 
+	font-size: 3em; 
+	height: 200px; 
+	background-color: #dadada; 
+	text-align: center; 
+	font-weight: bold;
+}
+#b50{
+	position: relative; 
+	vertical-align: right-top; 
+	display: inline-block; 
+	width: 180px;  
+
+	font-size: 12px; 
+	height: 200px; 
+	border:#dadada;
+	border-style:solid;
+	border-radius:30px;
+	
+	text-align: center; 
+	font-weight: bold;
+	
+}
+
+#b2,#b9,#b16{
+position: absolute; 
+bottom: 0px; 
+left: 0px; 
+height: 45%;
+width: 5px; 
+margin: 0px 0px; 
+background-color: silver; 
+	
+	
+	
+}
+#b3,#b10,#b17{
+position: absolute; 
+top: 0px;
+ right: 0;
+ height: 45%;
+ width: 5px; 
+ margin: 0px 0px; 
+ background-color: silver; 
+}
+#b4,#b11,#b18{
+	
+position: absolute; 
+bottom: 0px; 
+right: 0; 
+height: 45%; 
+width: 5px; 
+margin: 0px 0px; 
+background-color: silver; 
+}
+#b1,#b8,#b15{
+	
+	position: absolute; 
+	top: 0.5%; 
+	left: 0px; 
+	height: 45%; 
+	width: 5px; 
+	
+	margin: 0px 0px; 
+	background-color: silver; 
+}
+
+#myTooltip1{
+	height:55px;
+	width:200px;
+	text-align:center;
+	vertical-align:center;
+	background-color:#FAEBD7;
+	border-color:black;
+	border-style:solid;
+	
+}
+
+
+
+#hlavny1{
+	position:absolute;
+	width:20%;
+
+	background-color:#D3D3D3;
+	
+	left:10%;
+	border-radius:30px;
+
+
+}
+
+#div_prip{
+
+	height:400px;
+}
+
+#hlavny2{
+	border-radius:30px;
+	position:absolute;
+	width:20%;
+	height:320px;
+	
+	background-color:#D3D3D3;
+	left:40%;
+	
+}
+
+
+#hlavny3{
+	position:absolute;
+	width:20%;
+	background-color:#D3D3D3;
+	height:320px;
+	border-radius:30px;
+	left:70%;
+
+
+
+
+	
+	
+}
+#nazov_prip{
+	width:70%;
+	
+}
+#podr_prip{
+	width:70%;
+	height:60%;
+	
+}
+#podrobnosti{
+	position:relative;
+	width:70%;
+	left:15%;
+	background-color:white;
+	text-align:left;
+	vertical-align:center;
+	height:70%;
+
+}
+#vymaz_button{
+	position:relative;
+	width:40%;
+	
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Hanoiské veže</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="js/vendor/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/vendor/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/hanoi.js"></script>
+
+
+    <script src="js/menu.js"></script>
+    <link rel="stylesheet" href="css/menu.css">
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/counter.js"></script>
+    <script type="text/javascript" src="js/meniny_nav.js"></script>
+
+    <link rel="stylesheet" href="css/menu.css">
+
+</head>
+<body onload="load();meniny_onload()">
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false" data-target="#main_navbar" aria-controls="main_navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand glyphicon glyphicon-home" href="index.html"></a>
+        </div>
+        <div id="main_navbar" role="navigation" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+        </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+    <div id="breadcrumbs"></div>
+    <div id="meniny_nav"></div>
+</nav>
+<div id="counter"></div>
+<div class="info message">
+    <h3>Neplatný ťah!</h3>
+    <p>Väčší disk nesmie byť položený na menší</p>
+</div>
+<div class="success message">
+    <h3>Gratulujeme!</h3>
+    <p>Vyhrali ste!</p>
+    <p>počet ťahov:</p><div id="count"></div>
+    <p>Vaše skore:</p><div id="score"></div>
+    <p>Najlepšie skore:</p><div id="highscore"></div>
+</div>
+
+<div class="container">
+    <h2>Hanoiské veže</h2>
+    <p>Hra začína postavením pyramídy z hracích "kameňov" na jednu z troch drevených tyčiek, pričom tieto "kamene" sú zoradené odspodu od najäčšieho po najmenší. Úlohou je potom presunúť celú pyramídu na inú tyčku, avšak pri dodržaní nasledovných pokynov:</p>
+    <ul>
+        <li>v jednom ťahu (na jedenkrát) je možné premiestniť iba jeden hrací kameň,
+        <li>jeden ťah pozostáva zo vzatia vrchného "kameňa" z niektorej veže a jeho položenie na vrchol inej veže,
+        <li>väčší "kameň" nesmie byť nikdy položený na menší.
+    </ul>
+    <p>Hráč si vyberá od 1 až po 10 diskov.
+    </p>
+    <div class="init">
+        Zadajte počet diskov: <input type="number" min="1" max="10" id="number" >
+        <button type="button" id="start" onclick = "init()">Spustiť</button>
+    </div>
+    <div class="droppable" id="tower1">
+        <div class="bar"></div>
+        <div id="disc1" class="content">
+        </div>
+    </div>
+    <div class="droppable" id="tower2">
+        <div class="bar"></div>
+        <div id="disc2" class="content"></div>
+
+    </div>
+    <div class="droppable" id="tower3">
+        <div class="bar"></div>
+        <div id="disc3" class="content"></div>
+    </div>
+</div>
+</body>
+</html>

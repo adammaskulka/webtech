@@ -1,0 +1,154 @@
+.wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+
+  font-weight: bold;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+  margin: 15px;
+}
+
+.col{
+  width: 100%;
+  position: relative;
+  color: black;
+}
+
+.col > p {
+  text-align: justify;
+  font-size: 15px;
+  font-weight: lighter;
+  line-height: 22px;
+  top: 140px;
+}
+
+.col > p , h1 {
+  margin: 15px;
+  margin-bottom: 25px;
+}
+
+h1{
+  line-height: 2.5ex;
+  height: 5ex;
+  margin-left: 25px;
+  text-shadow: 2px 3px #0e2d37;
+}
+ .col> h1{
+   visibility: hidden;
+ }
+@media all{
+.bgimg{
+  position: absolute;
+  background-position: center;
+  background-blend-mode: multiply;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+  z-index: 150;
+}
+
+  #bgimg1{
+    background-image: url("../img/stary_most.jpg");
+  }
+  #bgimg2{
+    background-image: url("../img/solivar_small.jpg");
+  }
+  #bgimg3{
+    background-image: url("../img/stanica_small.jpg");
+  }
+  #bgimg4{
+    background-image: url("../img/studna_small.jpg");
+  }
+  #bgimg5{
+    background-image: url("../img/skalnate_pleso_small.jpg");
+  }
+  #bgimg6{
+    background-image: url("../img/mlyn_jana_small.jpg");
+  }
+  #bgimg7{
+    background-image: url("../img/hvezdaren_presov_small.jpg");
+  }
+  #bgimg8{
+    background-image: url("../img/ludwigov_small.jpg");
+  }
+  #bgimg9{
+    background-image: url("../img/tabacka_small.jpg");
+  }
+  #bgimg10{
+    background-image: url("../img/cerveny_most_small.jpg");
+  }
+}
+#left,#right2,#left3,#right4,#left5 {
+
+  background-image:linear-gradient(#3088A6,#1f5c71);
+  color: white;
+
+}
+
+#right,#left2,#right3,#left4,#right5 {
+  background-image:linear-gradient(#fff,#79c4de);
+
+  color: #3088A6;
+}
+
+#bgimg2 > h1,#bgimg3 > h1,#bgimg6 > h1,#bgimg7 > h1,#bgimg10 > h1 {
+  color: white;
+}
+
+@media all and (min-width: 800px) {
+  .col{
+    min-width: 40%;
+    width: 46%;
+  }
+  #left,#right {
+    flex: 1 auto;
+  }
+  #left2,#right2 {
+    flex: 2 auto;
+  }
+  #left3,#right3 {
+    flex: 3 auto;
+  }
+  #left4,#right4 {
+    flex: 4 auto;
+  }
+  #left5,#right5 {
+    flex: 5 auto;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .bgimg{
+    height: 180px;
+  }
+  h1{
+    height: 7.5ex;
+  }
+}
+
+@media all and (max-width: 300px) {
+  .bgimg{
+    height: 230px;
+  }
+  h1{
+    height: 10ex;
+  }
+}
+
+@media print{
+  .col{
+     border:1px solid black!important;
+  }
+}

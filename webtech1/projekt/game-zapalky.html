@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Zapalky</title>
+	<meta charset="UTF-8">
+
+	<link rel="stylesheet" href="css/style-johnny.css">
+	<script type="text/javascript" src="js/zapalky.js"></script>
+
+	<script type="text/javascript" src="js/meniny_nav.js"></script>
+
+	<script src="js/vendor/jquery-3.1.1.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/menu.css">
+
+	<script src="js/vendor/bootstrap.min.js"></script>
+
+	<script src="js/counter.js"></script>
+	<script src="js/menu.js"></script>
+
+
+
+</head>
+
+<body onload="meniny_onload()">
+
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false" data-target="#main_navbar" aria-controls="main_navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+					<a class="navbar-brand glyphicon glyphicon-home" href="index.html"></a>
+				</div>
+				<div id="main_navbar" role="navigation" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+				</div>
+
+			</div>
+			<div id="breadcrumbs"></div>
+			<div id="meniny_nav"></div>
+		</nav>
+		<div id="counter"></div>
+		<div class="jumbotron text-center">
+			<h1>Zápalkové havolamy</h1>
+
+			<div>Cielom hry je vymeniť zápalku na iné políčko, vyhodiť ju na zvyšné políčko alebo pridať zápalku tak,<br> aby to bolo matematicky správne. Zápalky môžte vkladať len na políčka, ktorým sa rozsvieti okraj.<br> Zadanie: </div>
+			<div id="zadanie"></div>
+
+			<div class="bloky1">
+				<div id="b1" class="droptarget"></div>
+				<div id="b2" class="droptarget"></div>
+				<div id="b3" class="droptarget"></div>
+				<div id="b4" class="droptarget"></div>
+
+				<div id="b5" class="droptarget"></div>
+				<div id="b6" class="droptarget"></div>
+				<div id="b7" class="droptarget"></div>
+			</div>
+			<div class="bloky2" id="30">
+				+
+			</div>
+			<div class="bloky1">
+				<div id="b8" class="droptarget"></div>
+				<div id="b9" class="droptarget"></div>
+				<div id="b10" class="droptarget"></div>
+				<div id="b11" class="droptarget"></div>
+
+				<div id="b12" class="droptarget"></div>
+				<div id="b13" class="droptarget"></div>
+				<div id="b14" class="droptarget"></div>
+			</div>
+			<div class="bloky2" id="b31">
+				=
+			</div>
+			<div class="bloky1">
+				<div id="b15" class="droptarget"></div>
+				<div id="b16" class="droptarget"></div>
+				<div id="b17" class="droptarget"></div>
+				<div id="b18" class="droptarget"></div>
+
+				<div id="b19" class="droptarget"></div>
+				<div id="b20" class="droptarget"></div>
+				<div id="b21" class="droptarget"></div>
+			</div>
+			<div id="b22" class="droptarget">
+
+
+
+			</div>
+			<div id="b50">
+				<h4>Bodovanie:</h4> Vyriešenie úlohy do:<br> 5 sekúnd = 5 bodov <br> 10 sekúnd = 4 body <br> 15 sekúnd = 3 body <br> 20 sekúnd = 2 body <br> 25 sekúnd = 1 bod<br> else = 0 bodov
+
+			</div>
+			<br>
+			<br>
+			<button value="ries" onclick="generuj()">Zobraz priklad</button>
+
+			<br>
+			<div id="vysledok"></div>
+			<br>
+			<div id="max_body">Ešte ste zatial nehrali</div>
+
+		</div>
+
+</body>
+
+</html>

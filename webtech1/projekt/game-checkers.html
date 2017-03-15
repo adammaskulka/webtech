@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+    <title>Chinese Checkers</title>
+    <meta charset="utf-8">
+    <script src="js/vendor/jquery-3.1.1.min.js"></script>
+    <script src="js/vendor/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/vendor/bootstrap.min.js"></script>
+<!--menu STUFF -->
+    <link rel="stylesheet" href="css/menu.css">
+    <script src="js/menu.js"></script>
+
+<!-- SWEET ALERT-->
+    <script src="js/vendor/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
+
+<!--GAME STUFF-->
+    <link rel="stylesheet" href="css/game-checkers.css">
+    <script src="js/game-checkers.js"></script>
+<!--meniny-->
+	<script type="text/javascript" src="js/meniny_nav.js"></script>
+  <script type="text/javascript" src="js/counter.js"></script>
+
+
+
+</head>
+
+<body onload="meniny_onload()">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false" data-target="#main_navbar" aria-controls="main_navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand glyphicon glyphicon-home" href="index.html"></a>
+        </div>
+        <div id="main_navbar" role="navigation" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+        </div><!--/.nav-collapse -->
+      </div><!--/.container-fluid -->
+      <div id="breadcrumbs"></div>
+	  <div id="meniny_nav"></div>
+    </nav>
+    <div id="counter"></div>
+      <div id="checkers"></div>
+
+
+</body>
+
+</html>

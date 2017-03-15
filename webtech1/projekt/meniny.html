@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Meniny</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Osobna stranka Jána Šedivého">
+
+    <link rel="stylesheet" href="css/style-johnny.css">
+
+    <script src="js/vendor/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/menu.css">
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+    <script src="js/counter.js"></script>
+    <script src="js/menu.js"></script>
+
+
+    <script src="js/vendor/tooltipster.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/tooltipster.bundle.min.css">
+
+
+    <meta name="robots" content="noindex,follow">
+    <meta name="googlebot" content="nosnippet,noarchive">
+    <meta name="author" content="Ján Šedivý">
+
+    <script type="text/javascript" src="js/meniny_nav.js"></script>
+
+
+    <script type="text/javascript" src="js/meniny.js"></script>
+    <script>
+    </script>
+
+</head>
+
+<body onload="spustenie();meniny_onload()">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false" data-target="#main_navbar" aria-controls="main_navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <a class="navbar-brand glyphicon glyphicon-home" href="index.html"></a>
+        </div>
+        <div id="main_navbar" role="navigation" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+        </div>
+      </div>
+      <div id="breadcrumbs"></div>
+      <div id="meniny_nav"></div>
+    </nav>
+    <div id="counter"></div>
+
+
+      <div class="jumbotron text-center">
+          <h1>Meniny</h1>
+          <h4 id="meniny"> </h4>
+
+          <p>
+              <span id="tooltip10">Dátum:</span>
+              <br>
+
+              <input type="text" id="datum" onchange="z_datum()" placeholder="DD.MM.">
+              <br>
+
+              <label>Meno:</label>
+              <br>
+              <input type="text" name="meno" id="meno" oninput="z_mena()" placeholder="Meno">
+
+          </p>
+      </div>
+</body>
+
+</html>

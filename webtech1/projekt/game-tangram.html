@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+    <title>Tangram</title>
+    <meta charset="utf-8">
+    <script src="js/vendor/jquery-3.1.1.min.js"></script>
+    <script src="js/vendor/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/tangram.css">
+    <script src="js/menu.js"></script>
+    <script src="js/tangram.js"></script>
+	  <script type="text/javascript" src="js/meniny_nav.js"></script>
+    <script src="js/counter.js"></script>
+</head>
+
+<body onload="meniny_onload()">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main_navbar" aria-expanded="false" aria-controls="main_navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand glyphicon glyphicon-home" href="index.html"></a>
+      </div>
+      <div id="main_navbar" role="navigation" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+      </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+  <div id="breadcrumbs"></div>
+	<div id="meniny_nav"></div>
+  </nav>
+  <div id="counter"></div>
+  <div id="nadpis">Tangram!</div>
+  <div class="instructions">
+    <p>Úloha: <br>Pretiahnite útvary do štvorca tak, aby ho celý vyplnili.<br> Útvary sa dajú otáčať kliknutím.</p>
+  </div>
+  <div class="instructions" id="progress">
+    <p>Čas: <label id="minutes">00</label>:<label id="seconds">00</label></p>
+  </div>
+  <div id="blockTray">
+      <div id="square" class="block"></div>
+      <div id="triangle1" class="block triangle"></div>
+      <div id="triangle2" class="block triangle"></div>
+      <div id="triangle3" class="block triangle"></div>
+      <div id="triangle4" class="block triangle"></div>
+      <div id="triangle5" class="block triangle"></div>
+      <div id="triangle6" class="block triangle"></div>
+      <div id="parallelogram" class="block"></div>
+
+  </div>
+  <div id="canvas"><img src="img/tangram_bg.png" alt="tangram playing board"></div>
+  <div id="modal">
+    <div id="result">Vyhral si! <br>
+      <p id="record">Čas: <label id="minutes_new">999</label>:<label id="seconds_new">999</label></p>
+      <p class="record">Rekordný čas: <label id="minutes_old">999</label>:<label id="seconds_old">999</label></p>
+      <a href="game-tangram.html">Skúsiť znova</a>
+      <a href="index.html">Domov</a>
+    </div>
+  </div>
+</html>

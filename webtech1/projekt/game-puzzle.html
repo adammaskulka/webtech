@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Adam Maskulka">
+
+    <title>Puzzle</title>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- main css file -->
+    <link rel="stylesheet" type="text/css" href="css/puzzle.css">
+
+    <!-- jquery -->
+    <script src="js/vendor/jquery-3.1.1.min.js"></script>
+    <!-- bootstrap javascript -->
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/jquery-ui.css">
+
+
+   <script src="js/vendor/jquery-ui.js"></script>
+
+    <script src="js/vendor/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
+
+    <script src="js/puzzle.js"></script>
+    <script src="js/counter.js"></script>
+
+    <!--Menu-->
+    <script src="js/menu.js"></script>
+    <script type="text/javascript" src="js/meniny_nav.js"></script>
+    <link rel="stylesheet" href="css/menu.css">
+
+</head>
+<body onload="meniny_onload()">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false" data-target="#main_navbar" aria-controls="main_navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      <a class="navbar-brand glyphicon glyphicon-home" href="index.html"></a>
+      </div>
+      <div id="main_navbar" role="navigation" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+      </div>
+    </div>
+    <div id="breadcrumbs"></div>
+    <div id="meniny_nav"></div>
+  </nav>
+  <div id="counter"></div>
+  <div class="jumbotron">
+    <section id="puzzle-hra">
+        <h2>Puzzle</h2>
+        <hr>
+        <div class="row">
+            <div id="individualneZadanie1" class="col-sm-6">
+                <div id="divMapa">
+                    <img src="img/SVK.png" id="imgSVK" alt="Slovensko">
+
+                    <div id="divBA" class="drop"></div>
+                    <div id="divTT" class="drop"></div>
+                    <div id="divNR" class="drop"></div>
+                    <div id="divTN" class="drop"></div>
+                    <div id="divBB" class="drop"></div>
+                    <div id="divZA" class="drop"></div>
+                    <div id="divPO" class="drop"></div>
+                    <div id="divKE" class="drop"></div>
+                </div>
+
+                <script>
+                    var totalScore = 0;
+                    var droppedRegions = 0;
+                </script>
+            </div>
+
+            <div class="col-sm-6">
+                <div id="divPuzzle">
+                    <div class="row">
+                        <img src="img/TT.png" id="imgTT" class="drag" alt="Trnava">
+                        <img src="img/PO.png" id="imgPO" class="drag" alt="Prešov">
+                        <img src="img/ZA.png" id="imgZA" class="drag" alt="Žilina">
+                        <img src="img/BB.png" id="imgBB" class="drag" alt="Banská Bystrica">
+                    </div>
+                    <div class="row">
+                        <img src="img/BA.png" id="imgBA" class="drag" alt="Bratislava">
+                        <img src="img/TN.png" id="imgTN" class="drag" alt="Trenčín">
+                        <img src="img/NR.png" id="imgNR" class="drag" alt="Nitra">
+                        <img src="img/KE.png" id="imgKE" class="drag" alt="Košice">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="divScore" class="col-sm-12">
+                <div id="youWon" class="alert alert-success inDivScore">
+                    <strong>Vyhrali ste!</strong>
+                </div>
+
+                <p id="pScore">Aktuálny počet bodov: 0</p>
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <button id="bNovaHra" class="inDivScore btn btn-primary form-control">Nová hra</button><br>
+                    </div>
+                    <div class="col-sm-4">
+                        <button class="inDivScore btn btn-success form-control" data-toggle="popover" data-placement="top" data-content="Hra je ako klasické puzzle. Pomocou myši uchopte kraj slovenska a snažte sa ho umiestniť na správne miesto na mape slovenska. Ak budete blízko správneho miesta, kraj sa sám prichytí. Hra končí ak na mapu umiestnite všetkých 8 krajov.">Nápoveda</button><br>
+                    </div>
+                    <div class="col-sm-4">
+                        <button id="bBodovanie" class="inDivScore btn btn-danger form-control" data-toggle="popover" data-placement="top" data-content="Ak vybraný kraj umiestnite na správne miesto na prvý krát, dostanete 1 bod. Ak kraj umiestnite na druhý krát dostanete 0,5 bodu. Inak nezískate žiaden bod. Maximálny počet bodov je 8, minimálny 0.">Bodovanie</button><br>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</div>
+    <script>
+        $(window).resize(function() {
+            $("#divMapa").height($("#divPuzzle").height());
+        });
+    </script>
+</body>
+
+</html>

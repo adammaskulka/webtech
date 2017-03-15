@@ -1,0 +1,51 @@
+.checkers-row{
+  width:100%;
+  height:11%;
+}
+
+.checkers-cell,.checkers-border{
+  position:relative;
+  width:11%;
+  height:100%;
+  display:inline-block;
+}
+
+#checkers{
+  position:relative;
+  height:550px;
+  width:550px;
+  border-radius:50%;
+  background:#663300 ;
+  padding:10px;
+  margin:0 auto;
+}
+.checkers-ball{
+  border-radius: 50%;
+	width: 50%;
+	height: 50%;
+  background-color:#B37436;
+  margin:25%;
+  background: radial-gradient(circle at 10px 10px, #B37436, #000);
+  z-index:2;
+}
+#cehckers-result{
+  position:absolute;
+  width:110px;
+  resize:none;
+  right:0px;
+}
+
+.checkers-cell .checkers-cell-fill{
+  position: absolute;
+  z-index:1;
+  border: 1px solid #666666;
+  border-radius: 50%;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: alpha(opacity=60);
+  opacity: 0.6;
+  -webkit-box-shadow: 0 0 1px 0px rgb( 255, 255, 255);
+  box-shadow: 0 0 1px 0px rgb( 255, 255, 255);
+  width: 50%;
+  height: 50%;
+  margin: 25%;
+}

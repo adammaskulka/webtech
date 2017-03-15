@@ -1,0 +1,49 @@
+#legenda {
+    width: 50%;
+    padding-top: 30px;
+    margin: 0 auto;
+    position: relative;
+    top: 50px;
+}
+#typy {
+    margin-bottom: 20px;
+}
+.w3-container {
+    position: relative;
+    top: 20px;
+}
+.D{
+    background-color: #646CFF;
+}
+.OCR {
+    background-color: #2cffa5;
+}
+.PD {
+    background-color: #87ff3a;
+}
+.SC {background-color: #ff3a5e;
+}
+.PN {
+    background-color: #fffe27;
+}
+#calendar {
+
+}
+
+
+
+/*case "D":*/
+/*$(this).closest('td').css('background-color', '#646CFF');*/
+/*break;*/
+/*case "OCR":*/
+/*$(this).closest('td').css('background-color', '#2cffa5');*/
+/*break;*/
+/*case "PD":*/
+/*$(this).closest('td').css('background-color', '#87ff3a');*/
+/*break;*/
+/*case "SC":*/
+/*$(this).closest('td').css('background-color', '#ff3a5e');*/
+/*break;*/
+/*case "PN":*/
+/*$(this).closest('td').css('background-color', '#fffe27');*/
+/*break;*/

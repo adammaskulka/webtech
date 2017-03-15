@@ -1,0 +1,14 @@
+#legenda {
+    width: 50%;
+    padding-top: 30px;
+    margin: 0 auto;
+    position: relative;
+    top: 50px;
+}
+#typy {
+    margin-bottom: 20px;
+}
+.w3-container {
+    position: relative;
+    top: 20px;
+}

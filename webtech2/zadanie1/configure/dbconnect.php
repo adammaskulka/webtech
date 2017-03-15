@@ -5,9 +5,9 @@ function connect_to_db()
 {
     $dbengine = 'mysql';
     $dbhost = 'localhost';
-    $dbuser = 'root';
-    $dbpassword = 'adamko';
-    $dbname = 'zadanie1';
+    $dbuser = '';
+    $dbpassword = '';
+    $dbname = '';
 
     try {
         $pdo = new PDO("" . $dbengine . ":host=$dbhost; dbname=$dbname", $dbuser, $dbpassword);

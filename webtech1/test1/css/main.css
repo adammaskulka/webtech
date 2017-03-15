@@ -1,0 +1,97 @@
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.elements{
+  top:50px;
+position: relative;
+width: 740px;
+height: 800px;
+
+margin: auto;
+}
+
+.redborder
+{
+border-style:solid;
+border-color:#FF0000;
+width: 300px;
+height: 300px;
+position: absolute;
+top:0;
+left:0;
+overflow-y:auto;
+}
+
+.note {
+  position: absolute;
+  top:10px;
+  left: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.ipsum {
+  color: inherit;
+  position: absolute;
+  border-style: dashed;
+  border-color: inherit;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  display: none;
+  top:35px;
+}
+
+.redborder:hover .ipsum{
+  display: block;
+}
+.blueborder:hover .ipsum{
+  display: block;
+}
+.yellowborder:hover .ipsum{
+  display: block;
+}
+.pinkborder:hover .ipsum{
+  display: block;
+}
+
+.blueborder
+{
+border-style:solid;
+border-color:#6A5ACD;
+width: 300px;
+height: 300px;
+position: absolute;
+top: 400px;
+bottom: 0;
+overflow-y:auto;
+}
+
+.yellowborder
+{
+border-style:solid;
+border-color:#FFFF00;
+width: 300px;
+height: 300px;
+position: absolute;
+right: 0;
+top:0;
+overflow-y:auto;
+
+}
+
+.pinkborder
+{
+border-style:solid;
+border-color:#FFC0CB;
+width: 300px;
+height: 300px;
+position: absolute;
+float: right;
+right: 0;
+top: 400px;
+overflow-y:auto;
+}

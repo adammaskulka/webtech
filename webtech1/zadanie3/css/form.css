@@ -1,0 +1,148 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Comic Sans MS", cursive, sans-serif !important;
+}
+
+input {
+    font-family: "Comic Sans MS", cursive, sans-serif !important;
+}
+
+#OfferMap {
+    height: 35%;
+    width: 95%;
+    position: relative;
+    margin: auto;
+    margin-bottom: 40px;
+    top: 20px;
+}
+
+#pac-input {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    margin-top: 15px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 300px;
+}
+
+#pac-input:focus {
+    border-color: #4d90fe;
+}
+
+.pac-container {
+    font-family: Roboto;
+}
+
+textarea {
+    background: url(http://i.stack.imgur.com/ynxjD.png) repeat-y;
+    font-family: "Comic Sans MS", cursive, sans-serif !important;
+    height: 140px;
+    font: normal 14px verdana;
+    line-height: 25px;
+    padding: 2px 10px;
+    border: solid 1px #ddd;
+}
+
+form {}
+
+.notes {
+    width: 50%;
+}
+
+.radioBox {
+    width: 20px;
+    height: 20px;
+}
+
+.textLabel {
+    width: 15%;
+    display: inline-block;
+    float: left;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 5px;
+}
+
+#age_alert {
+    display: none;
+    color: red;
+}
+
+#birthday_alert, #genger_alert {
+    display: none;
+    color: red;
+}
+
+#hidden_input {
+    display: none;
+}
+
+img {
+    position: absolute;
+}
+
+a.map_link {
+    display: none;
+}
+
+.checkBoxLabel {
+    display: block;
+    padding: 5px 8px;
+}
+
+label {
+    cursor: default;
+}
+
+.formular {
+    margin: auto;
+    width: 50%;
+}
+
+.checkInput {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.student_form,.employee_form {
+  display: none;
+}
+
+.box {
+    width: 15%;
+    display: inline-block;
+    float: left;
+    height: 50px;
+}
+
+#date_box, #age_box, #genger_box, #employee_form, #student_form {
+    display: none;
+}
+
+input[type=text]:focus, input[type=number]:focus, input[type=date]:focus {
+    border: 3px solid #555;
+}
+
+input {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin: auto;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+}
+
+input[type=radio] {
+    width: 30%;
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+    <title>Formulár</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/form.css">
+
+</head>
+
+<body id="formAdvertisement">
+
+    <div class="top">
+        <h1 class="top_header"><a href="index.html">Webové technológie - Zadanie 1 </a></h1>
+        <h1 class="right_header"> The best school project!</h1>
+    </div>
+
+    <nav>
+        <ul class="main_nav">
+
+            <li class="main_li"><a href="index.html"> Formulár </a></li>
+        </ul>
+    </nav>
+
+
+
+    <input id="pac-input" class="controls" type="text" placeholder="Zadaj adresu">
+    <div id="OfferMap"></div>
+
+    <div class="formular">
+
+        <form action="http://vmzakova.fei.stuba.sk/form2mail/form2mail.php" method="post" enctype="multipart/form-data">
+
+            <div>
+                <input type="hidden" name="apikey" value="755e90a58ac902d2e3b9300f52a7612a">
+                <input type="hidden" name="from" value="adammaskulka95@gmail.com">
+                <input type="hidden" name="to" value="adammaskulka95@gmail.com">
+                <input type="hidden" name="subject" value="Adam Maškulka">
+                <input type="hidden" name="admin" value="Adam Maškulka" />
+                <input type="hidden" name="redirectOk" value="http://147.175.98.22/~xmaskulka/zadanicko3/index.html">
+                <input type="hidden" name="redirectFalse" value="http://147.175.98.22/~xmaskulka/zadanicko3/index.html">
+            </div>
+
+            <input type="text" name="hidden_input" value="Adam Maskulka" id="hidden_input">
+
+            <ul>
+
+
+
+                <li><label class="textLabel" for="name">Meno:</label>
+                    <input type="text" name="Name" id="name" class="textInput" placeholder="Adam" required oninput="checkTextInput(this)" pattern=".{2,}" title="Dva alebo viac znakov" />
+                </li>
+
+                <li><label class="textLabel" for="surname">Priezvisko:</label>
+                    <input type="text" name="Surname" id="surname" class="textInput" placeholder="Maškulka" required oninput="checkTextInput(this)" pattern=".{2,}" title="Dva alebo viac znakov" />
+                </li>
+                <li><label class="textLabel">Email:</label>
+                    <input type="email" name="Email" id="email" class="textInput" placeholder="ferkohruska@azet.sk" required oninput="checkEmailInput(this)" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Zlý formát emailu" />
+                </li>
+
+
+                <li><label class="textLabel" for="person_id">Rodné číslo:</label>
+                    <input type="text" name="PersonID" id="person_id" class="textInput" placeholder="950719/9999" oninput="get_id()" required pattern="[0-9]{6}\/[0-9]{3,4}" />
+                </li>
+                <li id="date_box"><label class="textLabel" for="birthday">Dátum narodenia:</label>
+
+                    <input type="date" name="Birthday" id="birthday" class="textInput" required onchange="checkDate()">
+                    <p id="birthday_alert">Dátum narodenia nesúhlasí s rodným číslom</p>
+                </li>
+                <li id="age_box"><label class="textLabel" for="age">Vek:</label>
+
+                    <input type="number" name="Age" id="age" class="textInput" placeholder="21" required oninput="checkAge()" />
+                    <p id="age_alert">Vek nesúhlasí s rodným číslom</p>
+                </li>
+
+
+                <li id="genger_box">
+                    <span class="box">Pohlavie:<br></span>
+
+                    <label class="checkBoxLabel" for="male">
+                    <input type="radio" class="radioBox" name="Gender" value="Muž" id="male" checked="checked" onclick="checkGenger()"><span>Muž</span>
+                  </label>
+                    <label class="checkBoxLabel" for="female">
+                    <input type="radio" class="radioBox" name="Gender" value="Žena" id="female" onclick="checkGenger()"><span>Žena</span>
+                  </label>
+                    <p id="genger_alert">Pohlavie nesúhlasí s rodným číslom</p>
+
+                </li>
+
+                <li><label class="textLabel" for="full_address">Adresa:</label> <a id="map_link" href="" class="map_link">ADRESA</a>
+                    <input type="text" name="Address" id="full_address" class="textInput" placeholder="(Vyber z mapy)" readonly required/>
+                </li>
+                <li>
+                    <span class="box">Čo robíš?<br></span>
+                    <label class="checkBoxLabel" for="student">
+                    <input class="checkInput" type="checkbox" name="Occupation" value="student" id="student" onclick="studentIsChecked(this)"><span>Študujem</span>
+                    </label>
+                    <label class="checkBoxLabel" for="employee">
+                    <input class="checkInput" type="checkbox" name="Occupation" value="employee" id="employee" onclick="employeeIsChecked(this)"><span>Pracujem</span>
+                    </label>
+                </li>
+
+                <li class="student_form" id="student_form">
+                  <ul>
+                    <li> <label class="textLabel" for="university">V akej škole?</label>
+                        <input type="text" name="University" id="university" class="textInput" placeholder="STU FEI" oninput="checkTextInput(this)" /></li>
+                    <li><label class="textLabel">Aké zameranie?<br></label>
+                        <select name="study_way">
+                          <option value="" disabled="" selected="">Vyberte možnosť</option>
+                          <option value="Humanitné vedy">Humanitné vedy</option>
+                          <option value="Informatické vedy">Informatické vedy</option>
+                          <option value="Pôdohospodárske vedy">Pôdohospodárske vedy</option>
+                          <option value="Služby">Služby</option>
+                          <option value="Prírodné vedy">Prírodné vedy</option>
+                          <option value="Zdravotníctvo">Zdravotníctvo</option>
+                        </select>
+
+                    </li>
+
+                  </ul>
+                </li>
+
+
+                <li class="employee_form" id="employee_form">
+
+                        <label class="textLabel" for="company"><br>V akej firme?</label>
+                        <input type="text" name="Company" id="company" class="textInput" value="" placeholder="IBM" oninput="checkTextInput(this)" />
+                </li>
+
+
+                <li>
+                    <span class="box">Poznámky<br></span>
+                    <textarea class="notes" name="Notes" rows="4" id="notes" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo eleifend arcu, a placerat ligula tristique luctus. Ut venenatis ultricies nisl, non fringilla nibh fermentum ultrices."></textarea>
+                </li>
+                <li><span class="box"></span><input type="submit" id="submit_btn" value="Odoslať" onsubmit="submitForm(this)">
+                </li>
+            </ul>
+
+        </form>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeSZIlhkNWf1AVMGgF6lxfyuRPfgZUukY&libraries=places&callback=initMap " async defer></script>
+    <script src="js/form.js "></script>
+</body>
+
+</html>

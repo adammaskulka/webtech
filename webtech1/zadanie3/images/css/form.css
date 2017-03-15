@@ -1,0 +1,70 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#OfferMap {
+    height: 30%;
+    width: 70%;
+    position: relative;
+}
+
+#pac-input {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    margin-top: 15px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 300px;
+}
+
+#pac-input:focus {
+    border-color: #4d90fe;
+}
+
+.pac-container {
+    font-family: Roboto;
+}
+
+form {
+
+}
+
+#age_alert {
+  display:none;
+  color: red;
+}
+#birthday_alert {
+  display:none;
+  color: red;
+}
+
+#hidden_input {
+  display: none;
+}
+
+img {
+  position: absolute;
+}
+
+a.map_link {
+  visibility: hidden;
+}
+
+input[type=text]:focus,input[type=number]:focus,input[type=date]:focus {
+    border: 3px solid #555;
+}
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+}
+input[type=radio] {
+  width: 30%;
+}

@@ -1,0 +1,378 @@
+html,body {
+  
+}
+ul.main_nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+/*aside {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 40px;
+    margin-right: 40px;
+}*/
+
+
+aside {
+  float: right;
+  margin: 0 1.5%;
+  padding-top: 30px;
+  width: 30%;
+}
+
+a.cite {
+  text-decoration: none;
+  color: black;
+  text-decoration: underline;
+}
+
+li.main_li {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+li.main_li:last-child {
+    border-right: none;
+}
+
+li.main_li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.main_li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+[data-tooltip] {
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+
+
+/* Hide the tooltip content by default */
+
+[data-tooltip]:before, [data-tooltip]:after {
+    visibility: hidden;
+    opacity: 0;
+
+
+}
+
+
+/* Position tooltip above the element */
+
+[data-tooltip]:before {
+    position: absolute;
+    bottom: 110%;
+    left: 50%;
+    margin-bottom: 5px;
+    margin-left: -80px;
+    padding: 7px;
+    width: 160px;
+
+    border-radius: 6px;
+    background-color: black;
+    color: #fff;
+    content: attr(data-tooltip);
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+
+/* Triangle hack to make tooltip look like a speech bubble */
+
+[data-tooltip]:after {
+    position: absolute;
+    bottom: 110%;
+    left: 50%;
+    margin-left: -5px;
+    width: 0;
+    border-top: 5px solid black;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    content: " ";
+    font-size: 0;
+    line-height: 0;
+}
+
+
+/* Show tooltip content on hover */
+
+[data-tooltip]:hover:before, [data-tooltip]:hover:after {
+    visibility: visible;
+    bottom: 90%;
+
+    opacity: 1;
+}
+
+
+.blue {
+    background: #3498db;
+}
+
+.purple {
+    background: #9b59b6;
+}
+
+.navy {
+    background: #34495e;
+}
+
+.green {
+    background: #2ecc71;
+}
+
+.red {
+    background: #e74c3c;
+}
+
+.orange {
+    background: #f39c12;
+}
+
+.cs335, .cs426, .md303, .md352, .md313, .cs240 {
+    font-weight: 300;
+    cursor: pointer;
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    ;
+    height: auto;
+    width: 100%;
+    background-color: #333333;
+    bottom: 0;
+}
+
+a.copyright {
+    position: absolute;
+    width: 100%;
+    line-height: 40px;
+    font-size: 0.8em;
+    text-align: center;
+    bottom: 0;
+}
+
+article {
+  padding: 20px;
+}
+
+
+
+h1.timetable {
+  padding-left: 20px;
+  padding-top: 20px;
+
+}
+
+address.address {
+  padding: 20px;
+  font-family: "Open Sans";
+	font-size: 20px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 32px;
+}
+
+a.copyright:hover {
+    color: red;
+}
+
+
+.languages {
+
+    list-style-position: inside;
+}
+
+.rozvrh {
+    padding: 20px;
+}
+
+img {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    float: left;
+    border-radius: 8px;
+
+}
+
+
+
+article {
+    padding: inherit;
+}
+
+body {
+    font-family: 'Open Sans';
+
+}
+
+.top_header a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.top_header {
+    color: black;
+    text-decoration: none;
+    line-height: 1;
+    font-size: 37px;
+    display: block;
+    position: absolute;
+
+}
+
+.right_header {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    display: inline;
+    float: right!important;
+    position: relative;
+}
+
+.top {
+    position: relative;
+
+    height: 68px;
+    padding-top: 20px;
+    line-height: 50px;
+    overflow: hidden;
+    z-index: 2;
+    padding: 0.01em 16px;
+}
+
+
+address {
+    padding: inherit;
+}
+
+
+html {
+  background: url(../images/3.jpg) no-repeat center center fixed;
+
+  background-size: cover;
+}
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+
+    box-sizing: border-box;
+}
+
+table {
+    font-family: 'Open Sans', Helvetica;
+    color: #efefef;
+    width: 100%;
+    padding-top: 1px;
+}
+
+.helptable {
+    width: 30%;
+    text-transform: uppercase;
+    font-size: 1em;
+    text-align: center;
+    padding-top: 20px;
+}
+
+table tr:nth-child(2n) {
+    background: #eff0f1;
+}
+
+table tr:nth-child(2n+3) {
+    background: #fff;
+}
+
+table th, table td {
+    padding: 1em;
+    width: 10em;
+}
+
+.days, .time {
+    background: #34495e;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.link {
+    font-size: 0.9em;
+}
+
+.time {
+    width: 3em !important;
+}
+
+a.one:link, a.one:visited {
+    background-color: #34495e;
+    color: white;
+    padding: 14px 25px;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block
+}
+
+
+a.one:hover, a.one:active {
+    background-color: red;
+}
+
+h1 {
+  padding: 20px;
+	font-family: "Open Sans";
+	font-size: 35px;
+	font-style: normal;;
+	font-variant: small-caps;
+	font-weight: bold;
+	line-height: 32px;
+}
+h2 {
+  padding: 20px;
+	font-family: "Open Sans";
+	font-size: 30px;
+	font-style: normal;
+	font-variant: small-caps;
+	font-weight: bold;
+	line-height: 32px;
+}
+.about_me {
+	font-family: "Open Sans";
+	font-size: 20px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 32px;
+  padding: 20px;
+}
+aside {
+	font-family: "Open Sans";
+	font-size: 23px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 32px;
+}

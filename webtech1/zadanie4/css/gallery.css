@@ -1,0 +1,187 @@
+ #gallery a {
+    text-decoration: none;
+}
+
+#gallery .item {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    float: left;
+    border: 5px solid #333;
+    margin: 5px;
+}
+
+#gallery .item a {
+    overflow: hidden;
+
+}
+
+#gallery .item a img {
+    height: 100%;
+    align-self: center;
+    padding: 0;
+    border-radius: 0;
+    margin: 0;
+}
+
+.mainPhoto {
+  padding: 0;
+  margin: auto;
+
+
+}
+
+#gallery {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.lightbox {
+    /** Hide the lightbox */
+    opacity: 0;
+    /** Apply basic lightbox styling */
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    top:-100%;
+    bottom:100%;
+    color: #333333;
+    -webkit-transition:all 1.0s ease-in-out;
+  -moz-transition:all 1.0s ease-in-out;
+  -o-transition:all 1.0s ease-in-out;
+  transition:all 1.0s ease-in-out;
+  overflow: hidden;
+
+}
+
+.lightbox:target {
+    /** Show lightbox when it is target */
+    opacity: 1;
+    outline: none;
+    top:0%;
+  bottom:0%;
+
+}
+
+.lightbox-target:target img {
+max-height: 100%;
+max-width: 100%;
+}
+
+.lightbox .box {
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+
+    margin: 2% auto;
+    padding: 10px 20px 10px 20px;
+    background-color: #FFF;
+    box-shadow: 0px 1px 26px -3px #777777;
+}
+
+.lightbox .title {
+    margin: 0;
+    padding: 0 0 10px 0px;
+    border-bottom: 1px #ccc solid;
+    font-size: 22px;
+}
+
+.lightbox .content {
+    display: block;
+    position: relative;
+}
+
+.lightbox .close {
+    display: block;
+    float: right;
+    text-decoration: none;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    color: #858585;
+}
+
+.clear {
+    display: block;
+    clear: both;
+}
+
+.prevButton {
+    height: 72px;
+    width: 68px;
+    position: absolute;
+    background: url('../images/buttons.png') no-repeat;
+    top:50%;
+    margin-top: -36px;
+    cursor: pointer;
+    z-index: 2000;
+    background-position: left top;
+    left:15px;
+
+}
+
+
+.prevButton:hover {
+    background-position: left bottom;
+
+}
+
+.photoHeader {
+  text-align: center;
+  font-weight: 300; font-size: 38px; margin: 0px 0px 0px 0px; line-height: 120%;font-family: "Comic Sans MS", cursive, sans-serif;
+  margin-bottom: 10px;
+}
+
+.nextButton {
+    height: 72px;
+    width: 68px;
+    position: absolute;
+    background: url('../images/buttons.png') no-repeat;
+    top: 50%;
+    margin-top: -36px;
+    cursor: pointer;
+    z-index: 2000;
+    background-position: right top;
+    right:15px;
+
+}
+
+
+.nextButton:hover {
+    background-position: right bottom;
+
+}
+
+.photoDescription {
+  margin: 10px;
+  padding-top: 20px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 16px;
+}
+
+.showing {
+    opacity: 1;
+    z-index: 2;
+}
+
+.playBtn {
+  position: absolute;
+  z-index: 99999;
+  bottom: 11%;
+  left: 46%;
+  padding: 0;
+}
+
+.stopBtn {
+  position: absolute;
+  z-index: 999999;
+  bottom: 11%;
+  right: 46%;
+  padding: 0;
+}
+
+.playBtn:active, .stopBtn:active{
+    -webkit-transform:scale(.80); /* Safari and Chrome */
+    -moz-transform:scale(.90); /* Firefox */
+     transform:scale(.95);
+}

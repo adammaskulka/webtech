@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+    <title>Mapa</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+    <input id="origin-input" class="controls" type="text" placeholder="Začiatok cesty">
+
+    <div id="mode-selector" class="controls">
+        <input type="radio" name="type" id="changemode-walking" value="walking">
+        <label for="changemode-walking">Pešo</label>
+
+        <input type="radio" name="type" id="changemode-driving" checked="checked" value="driving">
+        <label for="changemode-driving">Autom</label>
+    </div>
+
+    <div id="map"></div>
+    <div id="right_div">
+        <div id="right-panel"></div>
+        <div id="pano"></div>
+    </div>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIBWeGIujia_FUMbbK6uBhDw4iualMNpc&libraries=places&callback=initMap">
+    </script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
